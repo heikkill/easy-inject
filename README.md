@@ -107,3 +107,9 @@ new EasyInject(new EasyInjectSettings(true, false, false, false, false));
 ```
 
 ..or simply implement a class inherited from ```EasyInjectSettings``` and place it on the classpath. It will be scanned and hopefully found by EasyInject.
+
+### Notes
+- Injected class has to have a no-argument constructor
+- Don't create circular dependencies
+- Circular dependencies between singletons might work
+- 
