@@ -11,7 +11,7 @@ Dependency injection for standalone Java applications
 - **@Exclude** : exclude class from all injections
 
 ### Usage
-1. Build easy-inject with ```mvn install``` and add the jar to classpath
+1. Build easy-inject with ```mvn install``` and add the jar to classpath.
 2. Annotate a method in your code with ```@EntryPoint```. Injections will be started from its declaring class.
 3. Annotate fields, methods & classes in your code using annotations listed above. See example below.
 3. Call ```EasyInject()``` from somewhere or use the provided utility main class ```com.easyinject.util.EasyInjectMain```
