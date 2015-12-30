@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.heikkill</groupId>
+	<artifactId>easy-inject</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Easy-inject</name>
+	<description>Dependency injection</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<javax.inject.version>1</javax.inject.version>
+		<reflections.version>0.9.9-RC2</reflections.version>
+		<slf4j-api.version>1.7.13</slf4j-api.version>
+		<testng.version>6.9.10</testng.version>
+		<mockito.version>1.10.19</mockito.version>
+
+		<maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
+		<maven-compiler-plugin.configuration.source>1.7</maven-compiler-plugin.configuration.source>
+		<maven-compiler-plugin.configuration.target>1.7</maven-compiler-plugin.configuration.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.reflections</groupId>
+			<artifactId>reflections</artifactId>
+			<version>${reflections.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j-api.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>${mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${maven-compiler-plugin.configuration.source}</source>
+					<target>${maven-compiler-plugin.configuration.target}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
