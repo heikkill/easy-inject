@@ -112,4 +112,3 @@ new EasyInject(new EasyInjectSettings(true, false, false, false, false));
 - Injected class has to have a no-argument constructor
 - Don't create circular dependencies
 - Circular dependencies between singletons might work
-- 
