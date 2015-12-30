@@ -106,4 +106,4 @@ Either provide settings to EasyInject constructor:
 new EasyInject(new EasyInjectSettings(true, false, false, false, false));
 ```
 
-..or simply implement a class inherited from ```EasyInjectSettings```. It will be scanned and hopefully found by EasyInject.
+..or simply implement a class inherited from ```EasyInjectSettings``` and place it on the classpath. It will be scanned and hopefully found by EasyInject.
